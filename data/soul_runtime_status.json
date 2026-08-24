@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-08-24T08:21:41+00:00",
+  "valid": true,
+  "mode": "hard_fail_closed",
+  "checks": {
+    "soul_present": true,
+    "objective_present": true,
+    "memory_present": true,
+    "control_present": true,
+    "soul_contract": true,
+    "objective_contract": true,
+    "execution_boundary": true,
+    "hard_gate_declared": true
+  },
+  "execution_effect": "RESEARCH_ALLOWED"
+}
