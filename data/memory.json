@@ -1,0 +1,12 @@
+{
+  "engine": "HULK",
+  "objective_version": "3.1",
+  "status": "BOOTSTRAP",
+  "current_research": null,
+  "opportunities": [],
+  "watchlist": [],
+  "management_decisions": [],
+  "open_research_questions": [],
+  "last_cycle": null,
+  "next_action": "Validate Soul/Objectives runtime, bind Lead AI, configure research/heartbeat, then begin opportunity discovery only after required credentials are provisioned."
+}
