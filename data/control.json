@@ -1,0 +1,8 @@
+{
+  "kill_switch": false,
+  "maintenance_pause": false,
+  "research_execution_authorized": true,
+  "business_execution_authorized": false,
+  "soul_gate_mode": "hard_fail_closed",
+  "management_approval_required_for_business_execution": true
+}
