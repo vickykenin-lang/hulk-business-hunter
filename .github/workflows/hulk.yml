@@ -1,0 +1,36 @@
+name: HULK Business Hunter
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hulk-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Soul hard gate
+        run: python scripts/soul_runtime.py
+      - name: Research readiness cycle
+        env:
+          AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/research_cycle.py
+      - name: Persist runtime state
+        if: always()
+        run: |
+          git config user.name "HULK"
+          git config user.email "hulk@business-hunter.local"
+          git add data
+          (git diff --cached --quiet || git commit -m "heartbeat: HULK runtime state")
+          git pull --rebase --autostash
+          git push
