@@ -11,7 +11,7 @@ Provide **at least one** Lead AI credential:
 
 Provide the live web-search credential:
 
-- `SERPER_API_KEY_HULK` — required for broad live web and market discovery. The runtime performs a small authenticated search before reporting `READY`.
+- `SERPER_API_KEY_HULK` — currently contains the SearchApi.io key and is required for broad live web and market discovery. The legacy secret name is retained to avoid credential re-entry; the runtime identifies the actual provider as `SEARCHAPI_IO`.
 
 ## Recommended for resilient multi-model research
 Provision both:
