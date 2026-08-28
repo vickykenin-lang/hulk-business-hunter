@@ -2,6 +2,8 @@ name: HULK Business Hunter
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'data/**'
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
