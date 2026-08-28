@@ -19,11 +19,14 @@ jobs:
           python-version: '3.x'
       - name: Soul hard gate
         run: python scripts/soul_runtime.py
+      - name: Serper adapter tests
+        run: python -m unittest discover -s tests -v
       - name: Research readiness cycle
         env:
           AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SERPER_API_KEY_HULK: ${{ secrets.SERPER_API_KEY_HULK }}
         run: python scripts/research_cycle.py
       - name: Persist runtime state
         if: always()
