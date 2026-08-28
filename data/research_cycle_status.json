@@ -1,15 +1,13 @@
 {
-  "checked_at_utc": "2026-08-28T04:25:40+00:00",
-  "state": "SEARCH_DEGRADED",
+  "checked_at_utc": "2026-08-28T04:26:59+00:00",
+  "state": "READY",
   "soul_valid": true,
   "business_execution_authorized": false,
   "memory_status": "BOOTSTRAP",
-  "search_provider": "SERPER",
+  "search_provider": "SEARCHAPI_IO",
   "search_health": {
-    "health": "FAILED",
-    "error_class": "HTTPError",
-    "http_status": 403,
-    "result_count": 0
+    "health": "HEALTHY",
+    "result_count": 9
   },
   "credential_values_stored": false
 }
