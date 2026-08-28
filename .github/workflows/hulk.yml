@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'
       - name: Soul hard gate
         run: python scripts/soul_runtime.py
-      - name: Serper adapter tests
+      - name: SearchApi.io adapter tests
         run: python -m unittest discover -s tests -v
       - name: Research readiness cycle
         env:
