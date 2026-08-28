@@ -9,6 +9,10 @@ Provide **at least one** Lead AI credential:
 - `DEEPSEEK_API_KEY` — supported Lead AI/research fallback credential.
 - `OPENAI_API_KEY` — optional alternative provider credential.
 
+Provide the live web-search credential:
+
+- `SERPER_API_KEY_HULK` — required for broad live web and market discovery. The runtime performs a small authenticated search before reporting `READY`.
+
 ## Recommended for resilient multi-model research
 Provision both:
 - `AWS_BEDROCK_API_KEY`
