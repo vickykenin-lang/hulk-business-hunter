@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-08-31T05:06:09+00:00",
+  "checked_at_utc": "2026-08-31T11:47:13+00:00",
   "state": "READY",
   "soul_valid": true,
   "business_execution_authorized": false,
@@ -7,7 +7,7 @@
   "search_provider": "SEARCHAPI_IO",
   "search_health": {
     "health": "HEALTHY",
-    "result_count": 7
+    "result_count": 9
   },
   "credential_values_stored": false
 }
